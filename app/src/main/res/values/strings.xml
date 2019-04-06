@@ -12,4 +12,17 @@
 
     <!-- Search Result-->
     <string name="got_to_home"> GO TO HOME</string>
+
+
+    <!-- login and user dash board -->
+
+    <string name="login">Login</string>
+    <string name="hint_pin">Enter PIN</string>
+    <string name="hint_UserID">Enter User ID</string>
+    <string name="welcome">Welcome</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="umbrella">Please take Your Umbrella</string>
+    <string name="make_transfer">MAKE A TRANSFER</string>
+    <string name="transfer">TRANSFER</string>
+    <string name="history">HISTORY</string>
 </resources>
