@@ -3,6 +3,7 @@ package com.android.squardb.ibmhackathon.data.source;
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
 
+import com.android.squardb.ibmhackathon.data.Account;
 import com.android.squardb.ibmhackathon.data.ExchangeRate;
 import com.android.squardb.ibmhackathon.data.Transaction;
 import com.android.squardb.ibmhackathon.data.User;
@@ -44,6 +45,18 @@ public class BankRepository {
 
     public void addExchangeRate(Context context, ExchangeRate exchangeRate) {
         bankLocalDataSource.addExchangeRate(context, exchangeRate);
+    }
+
+    public LiveData<ExchangeRate> getExchangeRateByCountryCode(Context context, String countryCode) {
+        return bankLocalDataSource.getExchangeRateByCountryCode(context, countryCode);
+    }
+
+    public void addAccount(Context context, Account account) {
+        bankLocalDataSource.addAccount(context, account);
+    }
+
+    public LiveData<List<Account>> getAccountsByUserId(Context context, int userId) {
+        return bankLocalDataSource.getAccountsByUserId(context, userId);
     }
 
 
