@@ -5,7 +5,26 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/tv_my_saving"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_saving"
+        android:layout_below="@+id/tv_my_saving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_below="@+id/tv_saving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
 
 </RelativeLayout>
