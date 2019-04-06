@@ -1,7 +1,15 @@
 package com.android.squardb.ibmhackathon.data;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
+
+@Entity
 public class Account {
 
+    @NonNull
+    @PrimaryKey
     private int id;
     private int userId;
     private int exchangeRateId;

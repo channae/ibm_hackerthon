@@ -1,7 +1,14 @@
 package com.android.squardb.ibmhackathon.data;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
+
+@Entity
 public class ExchangeRate {
 
+    @NonNull
+    @PrimaryKey
     private int id;
     private String countryCode;
     private double rate;

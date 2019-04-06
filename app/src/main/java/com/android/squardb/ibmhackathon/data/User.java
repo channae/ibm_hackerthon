@@ -1,7 +1,13 @@
 package com.android.squardb.ibmhackathon.data;
 
-public class User {
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
+@Entity
+public class User {
+    @NonNull
+    @PrimaryKey
     private int userId;
     private String username;
     private String userPin;

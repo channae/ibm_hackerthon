@@ -1,17 +1,22 @@
 package com.android.squardb.ibmhackathon.data;
 
-import java.util.Date;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
+@Entity
 public class Transaction {
+    @NonNull
+    @PrimaryKey
     private int id;
     private int userId;
     private int sourceAccountId;
     private int destinationAccountId;
-    private Date transactionDate;
+    private long transactionDate;
     private double amount;
     private double exchangeRate;
 
-    public Transaction(int id, int userId, int sourceAccountId, int destinationAccountId, Date transactionDate, double amount, double exchangeRate) {
+    public Transaction(int id, int userId, int sourceAccountId, int destinationAccountId, long transactionDate, double amount, double exchangeRate) {
         this.id = id;
         this.userId = userId;
         this.sourceAccountId = sourceAccountId;
@@ -53,11 +58,11 @@ public class Transaction {
         this.destinationAccountId = destinationAccountId;
     }
 
-    public Date getTransactionDate() {
+    public long getTransactionDate() {
         return transactionDate;
     }
 
-    public void setTransactionDate(Date transactionDate) {
+    public void setTransactionDate(long transactionDate) {
         this.transactionDate = transactionDate;
     }
 
@@ -78,11 +83,3 @@ public class Transaction {
     }
 }
 
-
-
-/*
-
-{ id : 1, users_id : 1, source_account_id : 1, destination_account_id : 1, transaction_date : "01-04-2019 9.30 AM",
-amount : 2000, fee : 0, exchange_rate : 51.10 } ,
-
- */
