@@ -25,4 +25,14 @@
     <string name="make_transfer">MAKE A TRANSFER</string>
     <string name="transfer">TRANSFER</string>
     <string name="history">HISTORY</string>
+
+    <!-- Transaction Completion -->
+    <string name="source_account">Source Account</string>
+    <string name="destination_account">Destination Account</string>
+    <string name="sending_amount">Sending Amount</string>
+    <string name="receiving_amount">Receiving Amount</string>
+    <string name="reference_no">Reference No.</string>
+    <string name="make_another_transfer">MAKE ANOTHER TRANSFER</string>
+    <string name="go_to_home">GO TO HOME</string>
+    <string name="share_details">SHARE DETAILS</string>
 </resources>
