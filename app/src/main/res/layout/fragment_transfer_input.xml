@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/frag_transfer_input_source_acc_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/transaction_account_layout_size"
+            android:layout_marginRight="@dimen/layout_margin_size_8"
+            android:layout_marginLeft="@dimen/layout_margin_size_8"
+            android:layout_marginTop="@dimen/layout_margin_size_8"
+            android:background="@drawable/bg_item_blue"
+            android:padding="@dimen/layout_margin_size_8">
+
+            <TextView
+                android:id="@+id/frag_transfer_input_source_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source Account"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_large"/>
+
+            <TextView
+                android:id="@+id/frag_transfer_input_source_acc_value"
+                android:layout_below="@+id/frag_transfer_input_source_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                android:text="MY Saving Account ( 123-456-7890)"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_xlarge"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_chevron_right_white_24dp"/>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frag_transfer_input_destination_acc_layout"
+        android:layout_below="@+id/frag_transfer_input_source_acc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/transaction_account_layout_size"
+        android:layout_marginRight="@dimen/layout_margin_size_8"
+        android:layout_marginLeft="@dimen/layout_margin_size_8"
+        android:layout_marginTop="@dimen/layout_margin_size_8"
+        android:background="@drawable/bg_item_blue"
+        android:padding="@dimen/layout_margin_size_8">
+
+        <TextView
+            android:id="@+id/frag_transfer_input_destination_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destination Account"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/frag_transfer_input_source_destination_value"
+            android:layout_below="@+id/frag_transfer_input_destination_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:text="Saving Account ( 123-456-7890)"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_chevron_right_white_24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frag_transfer_input_sending_amount_layout"
+        android:layout_below="@+id/frag_transfer_input_destination_acc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/transaction_account_layout_size"
+        android:layout_marginRight="@dimen/layout_margin_size_8"
+        android:layout_marginLeft="@dimen/layout_margin_size_8"
+        android:layout_marginTop="@dimen/layout_margin_size_8"
+        android:background="@drawable/bg_item_blue"
+        android:padding="@dimen/layout_margin_size_8">
+
+        <TextView
+            android:id="@+id/frag_transfer_input_sending_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending Amount"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/frag_transfer_input_sending_amount_value"
+            android:layout_below="@+id/frag_transfer_input_sending_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:text="SGD"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frag_transfer_input_receiving_amount_layout"
+        android:layout_below="@+id/frag_transfer_input_sending_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/transaction_account_layout_size"
+        android:layout_marginRight="@dimen/layout_margin_size_8"
+        android:layout_marginLeft="@dimen/layout_margin_size_8"
+        android:layout_marginTop="@dimen/layout_margin_size_8"
+        android:background="@drawable/bg_item_blue"
+        android:padding="@dimen/layout_margin_size_8">
+
+        <TextView
+            android:id="@+id/frag_transfer_input_receiving_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receiving Amount"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/frag_transfer_input_receiving_amount_value"
+            android:layout_below="@+id/frag_transfer_input_receiving_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:text="SGD 1000"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xlarge"/>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/frag_transfer_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/layout_margin_size_8"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        style="@style/ButtonText"
+        android:layout_marginRight="@dimen/layout_margin_size_8"
+        android:layout_marginLeft="@dimen/layout_margin_size_8"
+        android:background="@drawable/button"
+        android:layout_centerInParent="true"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/frag_transfer_ex_rate_detail_layout"
+        android:layout_below="@+id/frag_transfer_input_receiving_amount_layout"
+        android:layout_above="@+id/frag_transfer_next_button"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/layout_margin_size_8"
+        android:layout_marginLeft="@dimen/layout_margin_size_8"
+        android:layout_marginTop="@dimen/layout_margin_size_8"
+        android:padding="@dimen/layout_margin_size_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/frag_transfer_ex_rate_detail_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Exchange Rate"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/frag_transfer__ex_rate_detail_value"
+            android:layout_below="@+id/frag_transfer_ex_rate_detail_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:text="1 SGD = 50.7048 INR"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_xxlarge"/>
+
+
+        <TextView
+            android:id="@+id/frag_transfer_service_fee_detail_amount"
+            android:layout_below="@+id/frag_transfer__ex_rate_detail_value"
+            android:layout_marginTop="@dimen/layout_margin_size_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Service Fee : SGD 0.00"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_large"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
