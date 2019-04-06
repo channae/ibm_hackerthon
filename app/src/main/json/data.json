@@ -1,0 +1,45 @@
+{
+  source_account : [
+    { id : 1, users_id  : 1, account_no : "12345678", account_type : "saving"},
+    { id : 2, users_id  : 2, account_no : "34698927", account_type : "saving"},
+    { id : 3, users_id  : 1, account_no : "786746346", account_type : "one account"},
+
+  ],
+
+  destination_account : [
+    {id : 1, users_id : 1, exchange_rate_id : 1, account : "012877392", ifcs_code : "SBI00234", nick_name : "Karthi"},
+    {id : 2, users_id : 1, exchange_rate_id : 1, account : "086345322", ifcs_code : "SBI00234", nick_name : "Arun"},
+    {id : 3, users_id : 2, exchange_rate_id : 2, account : "086345322", ifcs_code : "CNA003535", nick_name : "Joo"},
+    {id : 4, users_id : 2, exchange_rate_id : 8, account : "23797993724", ifcs_code : "MYR003535", nick_name : "Joo"}
+  ],
+
+
+  users : [
+    { id: 1, user_name : "user_1234", user_pin : "12345678"},
+    { id : 2, user_name : "user_5678", user_pin : "12345678"}
+  ],
+
+  exchange_rate : [
+    { id : 1, currency_code : "INR", rate : 51.10,  service_fee : 0},
+    { id : 2, currency_code : "CNY", rate : 4.96,  service_fee : 0},
+    { id : 3, currency_code : "AUD", rate : 1.04,  service_fee : 0},
+    { id : 4, currency_code : "CAD", rate : 0.99,  service_fee : 0},
+    { id : 5, currency_code : "GBP", rate : 0.57,  service_fee : 0},
+    { id : 6, currency_code : "USD", rate : 0.74,  service_fee : 10},
+    { id : 7, currency_code : "THB", rate : 23.54,  service_fee : 5},
+    { id : 8, currency_code : "MYR", rate : 3.02,  service_fee : 5},
+    { id : 9, currency_code : "PHP", rate : 38.45,  service_fee : 8},
+    { id : 10, currency_code : "LKR", rate : 129.02,  service_fee : 5}
+  ],
+
+  transaction_history : [
+    { id : 1, users_id : 1, source_account_id : 1, destination_account_id : 1, transaction_date : "01-04-2019 9.30 AM", amount : 2000, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 1, destination_account_id : 2, transaction_date : "02-04-2019 9.30 AM", amount : 1000, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 1, destination_account_id : 1, transaction_date : "03-04-2019 9.30 AM", amount : 1020, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 2, destination_account_id : 1, transaction_date : "03-04-2019 9.30 AM", amount : 100, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 2, destination_account_id : 2, transaction_date : "04-04-2019 9.30 AM", amount : 10, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 2, destination_account_id : 1, transaction_date : "05-04-2019 9.30 AM", amount : 1300, fee : 0, exchange_rate : 51.10 } ,
+    { id : 1, users_id : 1, source_account_id : 1, destination_account_id : 2, transaction_date : "05-04-2019 9.30 AM", amount : 1300, fee : 0, exchange_rate : 51.10 } ,
+  ]
+
+}
