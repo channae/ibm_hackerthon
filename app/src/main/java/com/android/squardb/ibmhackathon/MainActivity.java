@@ -19,14 +19,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BankRepository bankRepository = new BankRepository();
-        bankRepository.addUser(this, new User(1, "Channa Edirisinghe", "1234"));
-
-        bankRepository.getUserByUsername(this, "Channa Edirisinghe").observe(this, new Observer<User>() {
-            @Override
-            public void onChanged(@Nullable User user) {
-                Log.d(TAG, "onChanged: MainActivity: " + user.getUsername());
-            }
-        });
     }
 }
