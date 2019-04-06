@@ -35,4 +35,5 @@
     <string name="make_another_transfer">MAKE ANOTHER TRANSFER</string>
     <string name="go_to_home">GO TO HOME</string>
     <string name="share_details">SHARE DETAILS</string>
+    <string name="share_using">Share Using</string>
 </resources>
