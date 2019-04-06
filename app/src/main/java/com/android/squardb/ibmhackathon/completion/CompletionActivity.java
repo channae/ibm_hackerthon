@@ -1,7 +1,9 @@
-package com.android.squardb.ibmhackathon;
+package com.android.squardb.ibmhackathon.completion;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.android.squardb.ibmhackathon.R;
 
 public class CompletionActivity extends AppCompatActivity {
 
