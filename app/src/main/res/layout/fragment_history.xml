@@ -9,8 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="10dp"
-        android:orientation="vertical"
-        android:background="@color/light_grey">
+        android:background="@color/light_grey"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
@@ -19,13 +19,16 @@
             android:text="@string/select_account"/>
 
         <RelativeLayout
+            android:id="@+id/account_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/account_detail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"/>
+
             <ImageButton
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -36,67 +39,78 @@
 
     </LinearLayout>
 
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/account_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    </ListView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:orientation="horizontal"
-        android:weightSum="3"
-        android:layout_margin="10dp">
-        
+        android:weightSum="3">
+
         <Button
             android:id="@+id/btn_week"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="70dp"
+            android:layout_weight="1"
             android:text="@string/week_button"/>
+
         <Button
             android:id="@+id/btn_month"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="70dp"
+            android:layout_weight="1"
             android:text="@string/month_button"/>
+
         <Button
             android:id="@+id/btn_range"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="70dp"
+            android:layout_weight="1"
             android:text="@string/range_button"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/range_container"
-        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:background="@drawable/date_border"
             android:hint="@string/from"
-            android:padding="10dp"
             android:inputType="date"
-            android:background="@drawable/date_border"/>
+            android:padding="10dp"/>
+
         <EditText
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/date_border"
             android:hint="@string/to"
-            android:padding="10dp"
             android:inputType="date"
-            android:background="@drawable/date_border"/>
+            android:padding="10dp"/>
     </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
         android:text="@string/search"/>
 
 

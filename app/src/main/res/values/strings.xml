@@ -9,4 +9,7 @@
     <string name="to">To</string>
     <string name="search">SEARCH</string>
     <string name="select_account">Select Account</string>
+
+    <!-- Search Result-->
+    <string name="got_to_home"> GO TO HOME</string>
 </resources>
