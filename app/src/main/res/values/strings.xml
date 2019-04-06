@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">IBM Hackathon Squard B</string>
+
+    <!-- History-->
+    <string name="week_button">1 WEEK</string>
+    <string name="month_button">1 MONTH</string>
+    <string name="range_button">RANGE</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="search">SEARCH</string>
+    <string name="select_account">Select Account</string>
 </resources>
