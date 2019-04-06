@@ -49,15 +49,22 @@ public class CompletionFragment extends Fragment {
         goToHomeButton = view.findViewById(R.id.btn_go_to_home);
         shareDetailsButton = view.findViewById(R.id.btn_share_details);
 
+        shareDetailsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                shareDetails();
+            }
+        });
+
     }
 
     private void shareDetails() {
-        /*String shareBody = "Here is the share content body";
+        String shareBody = "Cash transferred from " + sourceAccountTextView.getText().toString() + " to " + destinationAccountTextView.getText().toString();
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
         sharingIntent.setType("text/plain");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Cash Transferred!");
         sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
-        startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_using)));*/
+        startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_using)));
     }
 
 }
