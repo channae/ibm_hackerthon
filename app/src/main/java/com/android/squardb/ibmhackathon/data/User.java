@@ -1,27 +1,38 @@
 package com.android.squardb.ibmhackathon.data;
 
 public class User {
-    private String userId;
-    private String pinNumber;
 
-    public User(String userId, String pinNumber) {
+    private int userId;
+    private String username;
+    private String userPin;
+
+    public User(int userId, String username, String userPin) {
         this.userId = userId;
-        this.pinNumber = pinNumber;
+        this.username = username;
+        this.userPin = userPin;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public String getPinNumber() {
-        return pinNumber;
+    public String getUsername() {
+        return username;
     }
 
-    public void setPinNumber(String pinNumber) {
-        this.pinNumber = pinNumber;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getUserPin() {
+        return userPin;
+    }
+
+    public void setUserPin(String userPin) {
+        this.userPin = userPin;
     }
 }
